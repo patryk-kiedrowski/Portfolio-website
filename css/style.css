@@ -28,15 +28,27 @@ p
 #container
 {
   width: 100vw;
-  min-height: 100vh;
-  background-color: lightgray;
+}
+
+#landing-page
+{
+  background-image: url("../img/landing-page-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  box-shadow: -4px 4px 4px rgba(0,0,0,0.4);
 }
 
 #container .container-fluid .navbar
 {
   text-transform: uppercase;
   height: 100px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#container .container-fluid
+{
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  position: fixed;
 }
 
 .navbar-brand
@@ -66,9 +78,73 @@ p
   line-height: 50px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
   margin-left: 70px;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .header-surname
 {
   display: inline-block;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.navbar-expand-lg .navbar-collapse
+{
+  justify-content: flex-end;
+  margin-right: 70px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-light .navbar-nav .nav-link
+{
+  color: white;
+  padding-left: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+  color: #ACD7EC;
+}
+
+.navbar-light .navbar-nav .nav-link:active
+{
+  color: #ACD7EC;
+}
+
+.navbar-light .navbar-nav .nav-link:focus
+{
+  color: #92374D;
+}
+
+.navbar-light .navbar-nav .nav-link.active
+{
+  color: #ACD7EC;
+}
+
+.jumbotron.header
+{
+  background: transparent;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  padding: 40vh 100px 0px 100px;
+}
+
+.header-top-line
+{
+  font-size: 48px;
+  color: white;
+  font-weight: 300;
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+}
+
+.header-bottom-line
+{
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  padding: 0px 10vw 0px 10vw;
 }
