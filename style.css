@@ -1,0 +1,161 @@
+/*
+color palette:
+white - #FFFCFF;
+light blue - #ACD7EC;
+lapis lazuli - #247BA0;
+dark slate gray - #2F4858;
+quinacridone magenta - #92374D;
+*/
+*:root
+{
+  font-size: 12px;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+p
+{
+  margin: 0;
+  padding: 0;
+}
+
+#container
+{
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.main-page-nav
+{
+  width: 1200px;
+  height: 52px;
+  margin: 0 auto 0 auto;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(255,255,255, 0.5);
+}
+
+.logo
+{
+  display: inline-block;
+  margin: -12px auto 0 0;
+  padding-top: 2px;
+  color: white;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  font-weight: 300;
+  float: left;
+  position: relative;
+}
+
+.logo-image
+{
+  height: 50px;
+  display: inline-block;
+}
+
+.logo-text
+{
+  display: inline-block;
+  height: 50px;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.blue-dot
+{
+  color: #247BA0;
+}
+
+.main-page-nav-list
+{
+  display: inline-block;
+  list-style-type: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  float: right;
+}
+
+.main-page-nav-list-item
+{
+  display: inline-block;
+  margin-left: 2vw;
+}
+
+.main-page-nav-list-item:nth-child(1)
+{
+  margin-left: 0;
+}
+
+.nav-item
+{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:hover
+{
+  /*text-decoration: underline;
+  background-color: rgba(47,72,88,0.1);*/
+  color: #ACD7EC;
+}
+
+.main-page-header
+{
+  background-image: url("img/main-background-even-smaller.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 810px;
+}
+
+.header-text
+{
+  width: 70%;
+  margin: 0 auto 0 auto;
+  padding-top: 22vh;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+.sub-header-text
+{
+  width: 45%;
+  padding-top: 1vh;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  color: #efefef;
+  font-weight: 300;
+  font-size: 2rem;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.section-one
+{
+  width: 70%;
+  margin: 0 auto 0 auto;
+  padding-top: 5vh;
+  text-align: center;
+  /*color: #247BA0;*/
+  color: #92374D;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
