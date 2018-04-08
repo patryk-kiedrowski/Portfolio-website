@@ -31,6 +31,28 @@ p
   width: 100vw;
 }
 
+#move-up
+{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 25px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up-icon
+{
+  width: 24px;
+  height: 24px;
+  margin-top: 0px;
+}
+
 #landing-page
 {
   background-image: url("../img/landing-page-background.png");
@@ -51,6 +73,11 @@ p
   border-bottom: 1px solid rgba(255,255,255,0.4);
   position: fixed;
   z-index: 1;
+}
+
+.non-transparent-navbar
+{
+  background-color: rgba(0,0,0,0.5);
 }
 
 .navbar-brand
@@ -336,7 +363,7 @@ p
   height: 50px;
   margin: 0 auto 20px auto;
   display: block;
-  background-image: url("../img/about-line-one-line.png");
+  background-image: url("../img/about-line-two-line.png");
   background-position: center;
   background-repeat: no-repeat;
   color: #247BA0;
@@ -436,7 +463,7 @@ p
 
 .well.skills-header
 {
-  margin: 100px auto 50px auto;
+  margin: 100px auto 0px auto;
 }
 
 .well.skills-text
@@ -478,4 +505,36 @@ p
 {
   height: 100px;
   margin: 50px 75px;
+  -webkit-filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.4));
+  filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.4));
+}
+
+/*------------------------ PORTFOLIO ------------------------*/
+
+#portfolio
+{
+  min-height: 100vh;
+  background-image: url("../img/portfolio-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.portfolio-header-container
+{
+  padding: 100px 10vh 100px 10vh;
+}
+
+.well.portfolio-header
+{
+  width: 320px;
+  margin: 0 auto 0 auto;
+  display: block;
+  background-image: url("../img/portfolio-line.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #247BA0;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
 }
