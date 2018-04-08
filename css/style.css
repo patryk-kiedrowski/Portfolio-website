@@ -103,7 +103,8 @@ p
 .navbar-light .navbar-nav .nav-link
 {
   color: white;
-  padding-left: 40px;
+  margin-left: 40px;
+  padding-left: 0px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover
@@ -155,15 +156,11 @@ p
 
 #about
 {
-  height: 200vh;
+  min-height: 100vh;
   background-image: url("../img/about-background.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.about-line-one
-{
-  margin-bottom: 40px;
 }
 
 .about-header-container
@@ -183,6 +180,13 @@ p
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
+}
+
+/*------------------------ ABOUT ME LINE ONE ------------------------*/
+
+.about-line-one
+{
+  margin-bottom: 40px;
 }
 
 .row-one-left, .row-one-right
@@ -254,4 +258,144 @@ p
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*------------------------ ABOUT ME LINE TWO ------------------------*/
+
+.about-line-two
+{
+  margin-bottom: 40px;
+}
+
+.row-two-left, .row-two-right
+{
+  height: 500px;
+}
+
+.row-two-right
+{
+  padding-right: 100px;
+  padding-left: 20px;
+}
+
+.row-two-left
+{
+  padding-left: 100px;
+  padding-right: 20px;
+}
+
+.row-two-header
+{
+  width: 100%;
+}
+
+.well.about-university
+{
+  font-size: 20px;
+  color: #2F4858;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  margin: 80px auto 20px auto;
+  padding: 0px 65px 0px 65px;
+  text-align: center;
+}
+
+.svg-graduation
+{
+  margin-top: 5px;
+}
+
+.svg-university-container
+{
+  width: 400px;
+  height: 50px;
+  margin: 0 auto 20px auto;
+  display: block;
+  background-image: url("../img/about-line-one-line.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #247BA0;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ukw
+{
+  height: 501px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*------------------------ ABOUT ME LINE THREE ------------------------*/
+
+.about-line-three
+{
+  margin-bottom: 100px;
+}
+
+
+.row-three-left, .row-three-right
+{
+  height: 500px;
+}
+
+.row-three-left
+{
+  padding-left: 100px;
+  padding-right: 20px;
+}
+
+.row-three-right
+{
+  padding-right: 100px;
+  padding-left: 20px;
+}
+
+.row-three-header
+{
+  width: 100%;
+}
+
+.well.about-electronics
+{
+  font-size: 20px;
+  color: #2F4858;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  margin: 80px auto 20px auto;
+  padding: 0px 65px 0px 65px;
+  text-align: center;
+}
+
+.svg-gear
+{
+  margin-top: 0px;
+}
+
+.svg-electronics-container
+{
+  width: 400px;
+  height: 50px;
+  margin: 0 auto 20px auto;
+  display: block;
+  background-image: url("../img/about-line-one-line.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #247BA0;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pg
+{
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
