@@ -431,6 +431,7 @@ p
   min-height: 620px;
   border-top: 10px solid #92374D;
   background: linear-gradient(to right, rgba(4,17,23,1), rgba(6,29,39,1), rgba(4,17,23,1));
+  box-shadow: -4px 4px 4px rgba(0,0,0,0.4);
 }
 
 .well.skills-header
@@ -466,7 +467,7 @@ p
 
 .well.skills-items
 {
-  padding: 0px 150px 30px 150px;
+  padding: 0px 10vw 50px 10vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
