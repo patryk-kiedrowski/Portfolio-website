@@ -1,6 +1,6 @@
 /*
 color palette:
-white - #FFFCFF;
+white - #BFB48F;
 light blue - #ACD7EC;
 lapis lazuli - #247BA0;
 dark slate gray - #2F4858;
@@ -431,4 +431,50 @@ p
   min-height: 620px;
   border-top: 10px solid #92374D;
   background: linear-gradient(to right, rgba(4,17,23,1), rgba(6,29,39,1), rgba(4,17,23,1));
+}
+
+.well.skills-header
+{
+  margin: 100px auto 50px auto;
+}
+
+.well.skills-text
+{
+  font-size: 20px;
+  color: #BFB48F;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  margin: 80px auto 20px auto;
+  padding: 0px 65px 0px 65px;
+  text-align: center;
+}
+
+.svg-skills-container
+{
+  width: 400px;
+  height: 50px;
+  margin: 0 auto 20px auto;
+  display: block;
+  background-image: url("../img/my-skills-line.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #247BA0;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.well.skills-items
+{
+  padding: 0px 150px 30px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.well.skills-items > img
+{
+  height: 100px;
+  margin: 50px 75px;
 }
