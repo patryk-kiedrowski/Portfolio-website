@@ -1,6 +1,6 @@
 /*
 color palette:
-white - #BFB48F;
+khaki - #BFB48F;
 light blue - #ACD7EC;
 lapis lazuli - #247BA0;
 dark slate gray - #2F4858;
@@ -514,11 +514,11 @@ p
 
 #portfolio
 {
-  min-height: 100vh;
   background-image: url("../img/portfolio-background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding: 0 100px 100px 100px;
 }
 
 .portfolio-header-container
@@ -538,4 +538,97 @@ p
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.portfolio-item-icon
+{
+  display: block;
+  margin: 0 auto 45px auto;
+  height: 100px;
+}
+
+.portfolio-item-header
+{
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #2F4858;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+  padding-bottom: 45px;
+  letter-spacing: 1px;
+}
+
+.portfolio-column
+{
+  padding: 0 40px 0 40px;
+}
+
+.portfolio-column.middle
+{
+  border-left: 1px solid #2F4858;
+  border-right: 1px solid #2F4858;
+}
+
+.portfolio-item-text
+{
+  font-size: 14px;
+  color: #2F4858;
+  text-align: justify;
+  padding-bottom: 45px;
+  letter-spacing: 1px;
+}
+
+.btn.btn-link.portfolio-button
+{
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 0 auto;
+  background: #92374D;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 0;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+  letter-spacing: 2px;
+  transition: background 150ms ease-in-out;
+}
+
+.btn.btn-link.portfolio-button:focus
+{
+  background: #247BA0;
+  text-decoration: none;
+}
+
+.btn.btn-link.portfolio-button:hover
+{
+  background: #247BA0;
+  text-decoration: none;
+}
+
+#certificate
+{
+  border-top: 10px solid #BFB48F;
+  background: linear-gradient(to right, rgba(4,17,23,1), rgba(6,29,39,1), rgba(4,17,23,1));
+  box-shadow: -4px 4px 4px rgba(0,0,0,0.4);
+  padding-bottom: 100px;
+}
+
+.certificate-left-column
+{
+  border-right: 1px solid #BFB48F;
+}
+
+.certificate-image
+{
+  height: 480px;
+  display: block;
+  margin: 0 auto 0 auto;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.row.certificate
+{
+  padding-top: 100px;
 }
