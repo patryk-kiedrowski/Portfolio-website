@@ -1169,7 +1169,7 @@ var Collapse = function ($$$1) {
 
       var dimension = this._getDimension();
 
-      $$$1(this._element).removeClass(ClassName.COLLAPSE);
+      $$$1(this._element).removeClass(ClassName.COLLAPSE).addClass(ClassName.COLLAPSING);
       this._element.style[dimension] = 0;
 
       if (this._triggerArray.length > 0) {
@@ -1179,7 +1179,7 @@ var Collapse = function ($$$1) {
       this.setTransitioning(true);
 
       var complete = function complete() {
-        $$$1(_this._element).addClass(ClassName.COLLAPSE).addClass(ClassName.SHOW);
+        $$$1(_this._element).removeClass(ClassName.COLLAPSING).addClass(ClassName.COLLAPSE).addClass(ClassName.SHOW);
         _this._element.style[dimension] = '';
 
         _this.setTransitioning(false);
@@ -1216,7 +1216,7 @@ var Collapse = function ($$$1) {
 
       this._element.style[dimension] = this._element.getBoundingClientRect()[dimension] + "px";
       Util.reflow(this._element);
-      $$$1(this._element).removeClass(ClassName.COLLAPSE).removeClass(ClassName.SHOW);
+      $$$1(this._element).addClass(ClassName.COLLAPSING).removeClass(ClassName.COLLAPSE).removeClass(ClassName.SHOW);
 
       if (this._triggerArray.length > 0) {
         for (var i = 0; i < this._triggerArray.length; i++) {
@@ -1238,7 +1238,7 @@ var Collapse = function ($$$1) {
       var complete = function complete() {
         _this2.setTransitioning(false);
 
-        $$$1(_this2._element).addClass(ClassName.COLLAPSE).trigger(Event.HIDDEN);
+        $$$1(_this2._element).removeClass(ClassName.COLLAPSING).addClass(ClassName.COLLAPSE).trigger(Event.HIDDEN);
       };
 
       this._element.style[dimension] = '';
