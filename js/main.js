@@ -26,13 +26,30 @@ $(document).ready(function(){
 $(function() {
     //caches a jQuery object containing the header element
     var header = $(".container-fluid");
+    var navbar = $(".navbar");
+	var navbarBrand = $(".navbar-brand");
+	var myLogo = $(".my-logo");
+	var headerSurname = $(".header-surname");
+	var navbarCollapse = $(".navbar-collapse");
+	
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 100) {
+        if (scroll >= 100)
+        {
             header.addClass("non-transparent-navbar");
+            navbar.addClass("smaller-navbar");
+			navbarBrand.addClass("smaller-navbar-brand");
+			myLogo.addClass("smaller-my-logo");
+			headerSurname.addClass("smaller-header-surname");
+			navbarCollapse.addClass("smaller-navbar-collapse");
         } else {
             header.removeClass("non-transparent-navbar");
+            navbar.removeClass("smaller-navbar");
+			navbarBrand.removeClass("smaller-navbar-brand");
+			myLogo.removeClass("smaller-my-logo");
+			headerSurname.removeClass("smaller-header-surname");
+			navbarCollapse.removeClass("smaller-navbar-collapse");
         }
     });
 });
