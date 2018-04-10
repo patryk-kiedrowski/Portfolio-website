@@ -963,6 +963,8 @@ p
   {
     letter-spacing: 0px;
   }
+  
+  /*----------------------------------------- ABOUT ME -----------------------------------------*/
 
   .small-hidden
   {
@@ -972,6 +974,59 @@ p
   .small-shown.large-hidden
   {
     display: block;
+    margin: 30px auto 50px auto;
+  }
+  
+  .row-odd-left, .row-odd-right, .row-even-left, .row-even-right
+  {
+    padding: 0px;
+  }
+  
+  .row-header
+  {
+    margin: 0 auto 20px auto;
+  }
+  
+  .row-odd, .row-even
+  {
+    margin-bottom: 100px;
+  }
+  
+  .row-odd-right, .row-even-left
+  {
+    display: none;
+  }
+  
+  .row-odd-left, .row-even-right
+  {
+    height: auto;
+  }
+  
+  .section-header-container
+  {
+    padding: 100px 0 100px 0;
+  }
+  
+  .svg-container
+  {
+    width: auto;
+  }
+  
+  .row-text
+  {
+    padding: 0px 50px 0px 50px;
+  }
+  
+  /*----------------------------------------- ABOUT ME -----------------------------------------*/
+  
+  #my-skills
+  {
+    padding-top: 90px;
+  }
+  
+  .skills-items
+  {
+    padding: 0;
   }
 }
 
@@ -981,11 +1036,36 @@ p
   {
     padding: 0px;
   }
+  
+  .ukw
+  {
+    background: url("../img/ukw-center.jpg") center no-repeat;
+    max-width: 674px;
+  }
+  
+  .pg
+  {
+    background: url("../img/pg-center.jpg") center no-repeat;
+    max-width: 808px;
+  }
 }
 
 @media (max-width: 767.98px)
 {
+  .row-text
+  {
+    padding: 0px 30px 0px 30px;
+  }
   
+  #my-skills
+  {
+    padding-bottom: 50px;
+  }
+  
+  .skill-item
+  {
+    margin: 25px 50px;
+  }
 }
 
 @media (max-width: 575.98px)
@@ -1013,5 +1093,10 @@ p
   .header-bottom-line
   {
     font-size: 22px;
+  }
+  
+  .skill-item
+  {
+    margin: 25px 25px;
   }
 }
