@@ -14,7 +14,6 @@ DO ZROBIENIA:
 responsywność:
 - minimalny font dla ważnych informacji: 16px
 - PRZY KLIKNIĘCIU NA LINK W MENU: usunąć klasę show z klasy navbar-collapse albo id navbarNavAltMarkup
-- responsywność landing page'a (zmniejszyć magin nagłówka dla >=1200 <=1600)
 - responsywność o mnie
 - responsywność portfolio
 - responsywność certyfikatu
@@ -29,12 +28,17 @@ responsywność:
 >rozwijana lista w portfolio?
 >formularz kontaktowy wysyłający poprawnie emaila
 >zmniejszyć rozmiary (że wagę) zdjęć
->tak dopasować rozmiary zdjęć/ikonek by nie były skalowane w dół, bo internet explorer
 >wyszczuplić css-a i ilość klas
 
+LANDING PAGE OK
+MY SKILLS OK
+
 CO MOŻNA SKOMPRESOWAĆ:
-- nagłówki sekcji jako jeden, bo są identyczne
 - rząd 1 i 3 sekcji o mnie
+- rząd 2 sekcji o mnie i certyfikat
+- zrobić jeden svg container i dodać mu klasy z odpowiednim obrazkiem
+
+linie przed: 1130
 
 */
 *:root
@@ -323,17 +327,17 @@ p
   background-attachment: fixed;
 }
 
-.about-header-container
+.section-header-container
 {
   padding: 100px 10vh 100px 10vh;
 }
 
-.well.about-header
+.section-header
 {
   width: 320px;
   margin: 0 auto 0 auto;
   display: block;
-  background-image: url("../img/about-line.png");
+  background-image: url("../img/section-header-line.png");
   background-position: center;
   background-repeat: no-repeat;
   color: #247BA0;
@@ -343,6 +347,16 @@ p
 }
 
 /*------------------------ ABOUT ME LINE ONE ------------------------*/
+
+.small-shown
+{
+  display: block;
+}
+
+.small-shown.large-hidden
+{
+  display: none;
+}
 
 .about-line-one
 {
@@ -412,12 +426,15 @@ p
   text-align: justify;
 }
 
-.me-avatar
+.myself
 {
-  height: 500px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
+  height: 500px;
+  background-image: url("../img/me-avatar.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 393px;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -443,6 +460,14 @@ p
 {
   padding-left: 100px;
   padding-right: 20px;
+}
+
+.ukw
+{
+  background-image: url("../img/ukw.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 840px;
 }
 
 .row-two-header
@@ -553,10 +578,14 @@ p
 
 .pg
 {
-  height: 500px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: 500px;
+  background-image: url("../img/pg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 840px;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -601,6 +630,13 @@ p
   text-align: center;
 }
 
+.skill-item
+{
+  margin: 50px 75px;
+  height: 100px;
+  width: 105px;
+}
+
 .well.skills-items
 {
   padding: 0px 10vw 50px 10vw;
@@ -610,10 +646,11 @@ p
   align-items: center;
 }
 
-.well.skills-items > img
+.well.skills-items > .skill-item > img
 {
+  display: block;
   height: 100px;
-  margin: 50px 75px;
+  margin: 0 auto 0 auto;
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.4));
   filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.4));
 }
@@ -627,25 +664,6 @@ p
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 0 100px 100px 100px;
-}
-
-.portfolio-header-container
-{
-  padding: 100px 10vh 100px 10vh;
-}
-
-.well.portfolio-header
-{
-  width: 320px;
-  margin: 0 auto 0 auto;
-  display: block;
-  background-image: url("../img/portfolio-line.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #247BA0;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .portfolio-item-icon
@@ -686,7 +704,7 @@ p
   letter-spacing: 1px;
 }
 
-.portfolio-button
+.generic-button
 {
   width: 200px;
   height: 50px;
@@ -704,13 +722,13 @@ p
   border: none;
 }
 
-.portfolio-button:focus
+.generic-button:focus
 {
   background: #247BA0;
   text-decoration: none;
 }
 
-.portfolio-button:hover
+.generic-button:hover
 {
   background: #247BA0;
   text-decoration: none;
@@ -726,13 +744,17 @@ p
   padding: 100px;
 }
 
-.certificate-left-column
+.certificate-border
 {
   border-right: 1px solid #BFB48F;
 }
 
 .certificate-image
 {
+  background-image: url("../img/certificate.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 600px;
   height: 480px;
   display: block;
   margin: 0 auto 0 auto;
@@ -786,28 +808,9 @@ p
   padding: 0 100px 100px 100px;
 }
 
-.contact-header-container
-{
-  padding: 100px 10vh 0px 10vh;
-}
-
-.well.contact-header
-{
-  width: 320px;
-  margin: 0 auto 0 auto;
-  display: block;
-  background-image: url("../img/portfolio-line.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #247BA0;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .contact-sub-text
 {
-  margin-top: 50px;
+  margin-top: -50px;
   margin-bottom: 25px;
   font-size: 16px;
   text-align: center;
@@ -979,6 +982,19 @@ p
   {
     margin-right: 0px;
   }
+  
+    #certificate
+  {
+    padding: 100px 50px 100px 50px;
+  }
+}
+
+@media (max-width: 1339.98px)
+{
+  .certificate-text
+  {
+    padding: 0;
+  }
 }
 
 @media (max-width: 1199.98px)
@@ -1082,6 +1098,11 @@ p
   .header-top-line, .header-bottom-line
   {
     letter-spacing: 0px;
+  }
+
+  .small-hidden
+  {
+    display: none;
   }
 }
 
