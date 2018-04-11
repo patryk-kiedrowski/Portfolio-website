@@ -11,15 +11,10 @@ DO ZROBIENIA:
 
 - favicon i metadane
 - pousuwac komentarze
-- przywrocic zdjęcia tak jak były
 
 >pododawać prefixy!!!
 >rozwijana lista w portfolio?
 >formularz kontaktowy wysyłający poprawnie emaila
->zmniejszyć rozmiary (że wagę) zdjęć CHYBA JEST
-
-linie przed: 1130
-linie po: 1017 (z dodaną funkcjonalnością)
 
 */
 *:root
@@ -357,6 +352,9 @@ p
 .row-odd-right
 {
   padding: 0 100px 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .row-header-container
@@ -411,11 +409,15 @@ p
 
 .myself
 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myself-img
+{
   display: block;
-  margin: 0 auto 0 auto;
-  height: 500px;
-  background: url("../img/me-avatar.jpg") center no-repeat;
-  max-width: 393px;
+  max-height: 500px;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -441,14 +443,21 @@ p
 {
   padding-left: 100px;
   padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ukw
 {
-  height: 501px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ukw-img
+{
   display: block;
-  margin: 0 auto 0 auto;
-  background: url("../img/ukw.jpg") center no-repeat;
   max-width: 840px;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -487,10 +496,14 @@ p
 
 .pg
 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pg-img
+{
   display: block;
-  margin: 0 auto 0 auto;
-  height: 500px;
-  background: url("../img/pg.jpg") center no-repeat;
   max-width: 840px;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -628,17 +641,21 @@ p
 .certificate-border
 {
   border-right: 1px solid #BFB48F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .certificate-image
 {
-  background-image: url("../img/certificate.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  max-width: 600px;
-  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate-img
+{
   display: block;
-  margin: 0 auto 0 auto;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -876,12 +893,6 @@ p
     padding: 100px 50px 100px 50px;
   }
   
-  .certificate-image
-  {
-    background-size: contain;
-    box-shadow: 0px 0px 0px black;
-  }
-  
   .form-row
   {
     width: 70vw;
@@ -1013,7 +1024,7 @@ p
   
   .small-shown.large-hidden
   {
-    display: block;
+    display: flex;
     margin: 30px auto 50px auto;
   }
   
@@ -1143,25 +1154,6 @@ p
     padding: 0px;
   }
   
-  .ukw
-  {
-    background: url("../img/ukw-center.jpg") center no-repeat;
-    max-width: 674px;
-  }
-  
-  .pg
-  {
-    background: url("../img/pg-center.jpg") center no-repeat;
-    max-width: 808px;
-  }
-  
-  .certificate-image
-  {
-    background-size: contain;
-    height: 50vw;
-    box-shadow: 0px 0px 0px black;
-  }
-  
   .form-row
   {
     width: 80vw;
@@ -1281,12 +1273,6 @@ p
   .certificate-border
   {
     display:none;
-  }
-  
-  .certificate-image
-  {
-    height: 82vw;
-    background-size: contain;
   }
   
   .form-row
