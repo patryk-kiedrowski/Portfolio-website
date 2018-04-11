@@ -9,9 +9,6 @@ quinacridone magenta - #92374D;
 
 DO ZROBIENIA:
 
-- favicon i metadane
-- tła na telefony (może po prostu węższe ale dłuższe te standardowe obrazy?)
-
 >rozwijana lista w portfolio?
 >formularz kontaktowy wysyłający poprawnie emaila
 
@@ -496,7 +493,8 @@ p
 
 .pad-bot
 {
-  padding-bottom: 60px;
+  padding-bottom: 100px;
+  margin-bottom: 0px !important;
 }
 
 .svg-gear
@@ -1167,6 +1165,35 @@ p
 
 @media (max-width: 991.98px)
 {
+  body
+  {
+    background: rgba(47,72,88,0.3);
+  }
+  
+  .about-background-wtf
+  {
+    background-image: url("../img/about-background-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  #portfolio
+  {
+    background-image: url("../img/about-background-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
+  #contact
+  {
+    background-image: url("../img/about-background-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+  
   .header-bottom-line
   {
     padding: 0px;
