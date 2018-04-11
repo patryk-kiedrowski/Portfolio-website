@@ -9,16 +9,11 @@ quinacridone magenta - #92374D;
 
 DO ZROBIENIA:
 
-- jakiś przycisk na górze zjedź w dół albo coś
 - favicon i metadane
 - pousuwac komentarze
+- przywrocic zdjęcia tak jak były
 
-responsywność:
-- responsywność stopki!
-
->funkcjonalność telefonu, lokalizacji i maila
 >pododawać prefixy!!!
->posprawdzać cienie i letter spacing
 >rozwijana lista w portfolio?
 >formularz kontaktowy wysyłający poprawnie emaila
 >zmniejszyć rozmiary (że wagę) zdjęć CHYBA JEST
@@ -227,7 +222,7 @@ p
   width: 40px;
   height: 40px;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 42px;
 }
 
 .smaller-header-surname
@@ -876,7 +871,7 @@ p
     padding: 0px 30px 100px 30px;
   }
   
-    #certificate
+  #certificate
   {
     padding: 100px 50px 100px 50px;
   }
