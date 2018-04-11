@@ -10,12 +10,18 @@ quinacridone magenta - #92374D;
 DO ZROBIENIA:
 
 - favicon i metadane
+- tła na telefony (może po prostu węższe ale dłuższe te standardowe obrazy?)
 
->pododawać prefixy!!!
 >rozwijana lista w portfolio?
 >formularz kontaktowy wysyłający poprawnie emaila
 
 */
+html,body
+{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 *:root
 {
   font-size: 12px;
@@ -277,7 +283,8 @@ p
   text-align: center;
 }
 
-.collapsing {
+.collapsing
+{
   position: relative;
   height: 0 !important;
   overflow: hidden;
@@ -295,7 +302,14 @@ p
 
 #about
 {
-  min-height: 100vh;
+  background-image: url("../img/about-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.about-background-wtf
+{
   background-image: url("../img/about-background.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -416,7 +430,8 @@ p
 .myself-img
 {
   display: block;
-  max-height: 500px;
+  max-width: 393px;
+  width: 100%;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -458,6 +473,7 @@ p
 {
   display: block;
   max-width: 840px;
+  width: 100%;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -478,9 +494,9 @@ p
 
 /*------------------------ ABOUT ME LINE THREE ------------------------*/
 
-#about:nth-child(3)
+.pad-bot
 {
-  margin-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .svg-gear
@@ -504,6 +520,7 @@ p
 {
   display: block;
   max-width: 840px;
+  width: 100%;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -655,6 +672,8 @@ p
 .certificate-img
 {
   display: block;
+  max-width: 600px;
+  width: 100%;
   box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -974,7 +993,7 @@ p
   
   .navbar-nav
   {
-    width: 100vw;
+    width: 102vw;
     position: absolute;
     background: black;
     margin-left: -30px;
@@ -1153,6 +1172,12 @@ p
     padding: 0px;
   }
   
+  .ukw-img, .pg-img, .certificate-img, .myself-img
+  {
+    /*width: 750px;*/
+    margin: 0px 50px;
+  }
+  
   .form-row
   {
     width: 80vw;
@@ -1215,6 +1240,12 @@ p
   {
     margin: 0px 35px;
   }
+  
+  .ukw-img, .pg-img, .certificate-img, .myself-img
+  {
+    /*width: 560px;*/
+    margin: 0px 35px;
+  }
 }
 
 @media (max-width: 575.98px)
@@ -1242,6 +1273,12 @@ p
   .header-bottom-line
   {
     font-size: 22px;
+  }
+  
+  .ukw-img, .pg-img, .certificate-img, .myself-img
+  {
+    /*width: 300px;*/
+    margin: 0px 30px;
   }
   
   .skill-item
