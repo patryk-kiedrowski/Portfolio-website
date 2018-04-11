@@ -10,12 +10,12 @@ quinacridone magenta - #92374D;
 DO ZROBIENIA:
 
 - jakiś przycisk na górze zjedź w dół albo coś
+- favicon i metadane
+- pousuwac komentarze
 
 responsywność:
-- PRZY KLIKNIĘCIU NA LINK W MENU: usunąć klasę show z klasy navbar-collapse albo id navbarNavAltMarkup
 - responsywność stopki!
 
->ikony w stopce na svg i dodać im hovera
 >funkcjonalność telefonu, lokalizacji i maila
 >pododawać prefixy!!!
 >posprawdzać cienie i letter spacing
@@ -23,7 +23,6 @@ responsywność:
 >formularz kontaktowy wysyłający poprawnie emaila
 >zmniejszyć rozmiary (że wagę) zdjęć CHYBA JEST
 
-CO MOŻNA SKOMPRESOWAĆ: navbara
 linie przed: 1130
 linie po: 1017 (z dodaną funkcjonalnością)
 
@@ -289,18 +288,18 @@ p
   text-align: center;
 }
 
-/*.collapsing {
+.collapsing {
   position: relative;
   height: 0 !important;
   overflow: hidden;
   transition: all 250ms ease 0s !important;
-}*/
+}
 
-.collapsing {
+/*.collapsing {
   -webkit-transition: height .5s ease;
   -o-transition: height .5s ease;
   transition: height .5s ease;
-  /*width: 100vw;*/
+  width: 100vw;*/
 }
 
 /*------------------------ ABOUT ME ------------------------*/
@@ -769,14 +768,35 @@ p
 .footer-icon
 {
   display: block;
-  height: 40px;
+  font-size: 40px;
   -webkit-filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.4));
   filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.4));
+  color: #BFB48F;
 }
 
-.footer-icon:hover
+.ln:hover
 {
-  cursor: pointer;
+  color: #0077B5;
+}
+
+.lf:hover
+{
+  color: #D51007;
+}
+
+.fb:hover
+{
+  color: #3B5998;
+}
+
+.gh:hover
+{
+  color: #C9510C;
+}
+
+.cp:hover
+{
+  color: white;
 }
 
 .footer-box
@@ -784,17 +804,18 @@ p
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 290px;
+  width: 260px;
 }
 
 .footer-box:nth-child(2)
 {
-  margin: 0 75px;
+  margin: 0 6vw;
 }
 
 .footer-box-icon
 {
-  height: 40px;
+  font-size: 20px;
+  color: #BFB48F;
 }
 
 .footer-box-text
@@ -803,7 +824,7 @@ p
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #BFB48F
+  color: #BFB48F;
 }
 
 .footer-info
@@ -1101,6 +1122,23 @@ p
   {
     padding: 0px 0px 100px 0px;
   }
+  
+  /*----------------------------------------- FOOTER -----------------------------------------*/
+  
+  .footer-row-one, .footer-row-two
+  {
+    padding: 0px 30px;
+  }
+  
+  .footer-link
+  {
+    margin: 50px 75px;
+  }
+  
+  .footer-box:nth-child(2)
+  {
+    margin: 0px 50px;
+  }
 }
 
 @media (max-width: 991.98px)
@@ -1133,6 +1171,31 @@ p
   {
     width: 80vw;
   }
+  
+  .footer-link
+  {
+    margin: 50px 50px;
+  }
+  
+  .footer-row-two
+  {
+    display: block;
+  }
+  
+  .footer-box
+  {
+    margin: 0 auto 25px auto;
+  }
+  
+  .footer-box:nth-child(2)
+  {
+    margin: 0 auto 25px auto;
+  }
+  
+  .footer-info
+  {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 767.98px)
@@ -1155,6 +1218,16 @@ p
   .portfolio-column
   {
     padding: 0px 30px 100px 30px;
+  }
+  
+  .footer-row-one
+  {
+    padding: 50px 15px;
+  }
+  
+  .footer-link
+  {
+    margin: 0px 35px;
   }
 }
 
@@ -1229,5 +1302,16 @@ p
   .contact-textarea
   {
     height: 250px;
+  }
+  
+  .footer-row-one
+  {
+    justify-content: space-evenly;
+    padding: 50px 15px 15px 15px;
+  }
+  
+  .footer-link
+  {
+    margin: 0px 35px 35px 35px;
   }
 }

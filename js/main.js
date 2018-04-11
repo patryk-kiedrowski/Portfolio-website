@@ -31,7 +31,7 @@ $(function() {
 	var myLogo = $(".my-logo");
 	var headerSurname = $(".header-surname");
 	var navbarCollapse = $(".navbar-collapse");
-	
+
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
@@ -53,3 +53,13 @@ $(function() {
         }
     });
 });
+
+function hideNavbar()
+{
+  $(".navbar-collapse").removeClass("show");
+}
+
+function removeCollapsing()
+{
+  $(".navbar-toggler").removeClass("collapsing");
+}
