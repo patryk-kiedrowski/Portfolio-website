@@ -1501,3 +1501,157 @@ p
     margin: 0px 35px 35px 35px;
   }
 }
+
+/*------------------------------- BLOG ----------------------------------*/
+
+#blog-landing-page
+{
+  background: linear-gradient(120deg, rgba(36,123,160,0.6), rgba(146,55,77,0.6)), url("../img/slide2.png");
+  height: 60vh;
+}
+
+.welcome-to-blog
+{
+  font-size: 48px;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 30vh;
+  text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+}
+
+#articles
+{
+  min-height: 100vh;
+  padding: 100px 0px 50px 0px;
+}
+
+.sidebar
+{
+  padding-left: 30px;
+  padding-right: 60px;
+}
+
+.articles-header, .sidebar-header
+{
+  margin-bottom: 100px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #2F4858;
+  text-align: center;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+}
+
+.sidebar-header
+{
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.sidebar-header::before
+{
+  content: "\0007C";
+  color: #92374D;
+  font-size: 30px;
+  padding-right: 15px;
+}
+
+.articles-header::before
+{
+  content: "\0007C";
+  color: #92374D;
+  font-size: 30px;
+  padding-right: 40px;
+}
+
+.articles-header::after
+{
+  content: "\0007C";
+  color: #92374D;
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+.article-container:nth-child(2n)
+{
+  padding-left: 30px;
+  padding-right: 0px;
+}
+
+.article-container:nth-child(2n+1)
+{
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+.article-loop
+{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.article-image, .article-title, .article-excerpt
+{
+  width: inherit;
+}
+
+.article-image
+{
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.article-title
+{
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  text-transform: uppercase;
+}
+
+.article-excerpt
+{
+  text-indent: 20px;
+  font-size: 16px;
+  color: #2F4858;
+  text-align: justify;
+}
+
+.article-button
+{
+  margin: 40px auto 50px auto;
+}
+
+.article-list
+{
+  list-style-type: none;
+  font-size: 16px;
+  color: #2F4858;
+}
+
+.article-list > li::before
+{
+  content: "\02013";
+  color: #92374D;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+@media (max-width: 1199.98px)
+{
+  .article-container:nth-child(2n)
+  {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .article-container:nth-child(2n+1)
+  {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
