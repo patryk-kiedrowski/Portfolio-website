@@ -831,6 +831,10 @@ p
 }
 
 /*------------------------- WORKS -------------------------*/
+#my-works
+{
+  margin: 0px 100px;
+}
 
 .works-container
 {
@@ -839,29 +843,62 @@ p
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
-  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  /*box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+  position: relative;
 }
 
 .works-image
 {
+  height: 320px;
+  width: 300px;
+}
+
+.works-image-container
+{
+  height: 320px;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.works-container::after
+{
+  position: absolute;
+  content: "";
+  width: 100%;
   height: 80%;
-  background: lightgray;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: linear-gradient(120deg, rgba(36,123,160,0), rgba(146,55,77,0));
+  transition: opacity ease-in-out 200ms;
+}
+
+.works-container:hover::after
+{
+  background: linear-gradient(120deg, rgba(36,123,160,0.6), rgba(146,55,77,0.6));
+  opacity: 1;
+  cursor: pointer;
 }
 
 .works-text
 {
-  height: 20%;
-  background: white;
+  height: 80px;
+  line-height: 76px;
   text-align: center;
-  line-height: 33%;
   color: #2F4858;
-  padding-top: 28px;
   text-transform: uppercase;
+  background: white;
+  padding: 0px 15px;
+  border-top: 4px solid #92374D;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .works-text > h1
 {
   font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
 }
 
 /*------------------------ CONTACT ------------------------*/
@@ -1012,6 +1049,11 @@ p
 
 @media (max-width: 1339.98px)
 {
+  #my-works
+  {
+    margin: 0px 50px;
+  }
+  
   .certificate-text
   {
     padding: 0;
@@ -1031,6 +1073,11 @@ p
     background-color: black;
     border-bottom: none;
     box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  }
+  
+  #my-works
+  {
+    margin: 0px 15px;
   }
   
   .my-logo
