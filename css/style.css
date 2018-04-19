@@ -830,6 +830,40 @@ p
   margin: 0 auto 0 auto;
 }
 
+/*------------------------- WORKS -------------------------*/
+
+.works-container
+{
+  height: 400px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.works-image
+{
+  height: 80%;
+  background: lightgray;
+}
+
+.works-text
+{
+  height: 20%;
+  background: white;
+  text-align: center;
+  line-height: 33%;
+  color: #2F4858;
+  padding-top: 28px;
+  text-transform: uppercase;
+}
+
+.works-text > h1
+{
+  font-size: 20px;
+}
+
 /*------------------------ CONTACT ------------------------*/
 
 #footer
@@ -1506,7 +1540,10 @@ p
 
 #blog-landing-page
 {
-  background: linear-gradient(120deg, rgba(36,123,160,0.6), rgba(146,55,77,0.6)), url("../img/blog-background.png");
+  background: linear-gradient(120deg, rgba(36,123,160,0.6), rgba(146,55,77,0.6)), url("../img/writing4.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 60vh;
 }
 
@@ -1514,17 +1551,21 @@ p
 {
   font-size: 48px;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 30vh;
-  text-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+  text-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+  text-transform: uppercase;
 }
 
 #articles
 {
   min-height: 100vh;
   padding: 100px 0px 50px 0px;
+  background-image: url("../img/about-background.png");
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .sidebar
@@ -1643,6 +1684,18 @@ p
 
 @media (max-width: 1199.98px)
 {
+  .article-loop
+  {
+    padding-left: 60px;
+  }
+  
+  .sidebar
+  {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+  }
+  
   .article-container:nth-child(2n)
   {
     padding-left: 15px;
@@ -1658,6 +1711,11 @@ p
 
 @media (max-width: 991.98px)
 {
+  #articles
+  {
+    background: transparent;
+  }
+  
   .sidebar
   {
     padding-left: 15px;
