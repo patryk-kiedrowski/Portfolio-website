@@ -40,11 +40,6 @@ p
   padding: 0;
 }
 
-a:hover
-{
-  text-decoration: none;
-}
-
 #container
 {
   width: 100vw;
@@ -681,7 +676,6 @@ a:hover
 {
   width: 200px;
   height: 50px;
-  line-height: 40px;
   display: block;
   margin: 0 auto 0 auto;
   background: #92374D;
@@ -694,12 +688,6 @@ a:hover
   letter-spacing: 2px;
   transition: background 150ms ease-in-out;
   border: none;
-}
-
-.portfolio-button-container
-{
-  margin: 0px auto;
-  width: 200px;
 }
 
 .generic-button:focus
@@ -850,7 +838,7 @@ a:hover
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0px;
-  padding: 0px 100px;
+  padding-bottom: 100px;
 }
 
 .works-container
@@ -917,7 +905,6 @@ a:hover
   line-height: normal;
   text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
 }
-
 
 /*------------------------ CONTACT ------------------------*/
 
@@ -1093,6 +1080,16 @@ a:hover
     box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
   }
   
+  #my-works
+  {
+    padding: 0px 15px;
+  }
+  
+  .works-container
+  {
+    margin-bottom: 0px;
+  }
+  
   .my-logo
   {
     margin-left: 0px;
@@ -1187,16 +1184,6 @@ a:hover
   }
   
   /*----------------------------------------- ABOUT ME -----------------------------------------*/
-  
-  #my-works
-  {
-    padding: 0px 15px;
-  }
-  
-  .works-container
-  {
-    margin-bottom: 0px;
-  }
 
   .small-hidden
   {
